@@ -181,7 +181,7 @@ if __name__ == "__main__":
     genres_test = ['Crime', 'Animation', 'Film-Noir', 'Fantasy', 'Sci-Fi', 'Adventure', 'Drama', 'War', 'Thriller',
                    'Documentary', 'Action', 'Comedy', 'Mystery', 'Musical', 'Romance', 'Horror']
     test.training_data_prepare(genres_test)
-    next_data_set = test.kmeans_cluster(9)
+    next_data_set = test.kmeans_cluster(7)
     next_data_set.to_csv("data/user_group.csv", encoding='utf-8')
     print("clustering complete...")
     # dataset_integrate()
